@@ -1,0 +1,35 @@
+/* header [furniture dropDown] */
+
+.dropDown{
+  position: relative;
+}
+.dropDown-menu{
+  position: absolute;
+  border: 2px solid var(--mainColor);
+  padding: 15px;
+  margin-top: 54px;
+  background: #fff;
+  width: 340%;
+  display: flex;
+  transform: scale(0);/*it works like we hide the menu */
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.dropDown:hover .dropDown-menu{
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+.dropDown-menu ul{
+  text-align: left;
+}
+.dropDown-menu ul li:first-child{
+  margin-bottom: 10px;
+}
+.dropDown-menu ul li:first-child a{
+  border-bottom: 2px dotted var(--mainColor);
+}
+.dropDown-menu ul li{
+  line-height: 1.7;/*this is the space between every li after the first li*/
+}

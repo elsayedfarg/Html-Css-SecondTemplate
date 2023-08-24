@@ -1,0 +1,55 @@
+.self-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 30px;
+
+}
+
+.self-section .right-side {
+    background: #f7f3ef;
+    text-transform: capitalize;
+    padding: 40px;
+    position: relative;
+}
+
+.right-side-top {
+    margin-bottom: 20px;
+}
+
+.right-side-top-left {
+    color: var(--mainColor);
+}
+
+.right-side-top-left span {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.right-side-top-left p {
+    font-weight: bold;
+}
+
+.right-side-top-right {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+}
+
+.right-side-body {
+    line-height: 40px;
+}
+
+.right-side-body .lines {
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.right-side-body .lines span {
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background: var(--mainColor);
+    margin-left: 10px;
+}

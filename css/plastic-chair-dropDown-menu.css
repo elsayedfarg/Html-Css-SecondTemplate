@@ -1,0 +1,30 @@
+/* header [plastic chair dropDown] */
+.second-dropDown{
+  position: relative;
+}
+.second-dropDown-menu ul{
+  text-align: left;
+  width: 100px;
+}
+.second-dropDown-menu  ul li
+{
+    line-height: 1.9;
+}
+.second-dropDown-menu{
+  position: absolute;
+  border: 2px solid var(--mainColor);
+  background: #fff;
+  padding: 15px;
+  margin-top: 54px;
+  width: 150%;
+  display: block;
+  transform: scale(0);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.second-dropDown:hover .second-dropDown-menu{
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}

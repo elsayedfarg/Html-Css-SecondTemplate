@@ -1,0 +1,59 @@
+/* sprites section */
+.sprites{
+  display: flex;
+}
+.sprite-item{
+  flex-grow: 1;
+  text-align: center;
+  border-right: 1px solid var(--mainColor);
+}
+.sprite-item:last-child{
+  border: 0;
+}
+.sprite-info h3{
+  font-size: 18px;
+}
+.sprite-info span{
+  color: gray;
+  font-size: 15px;
+}
+.sprite-icon{
+  background-image: url("../images/service-icon.png");
+  height: 50px;
+  background-repeat: no-repeat;
+  transition: 0.8s;
+}
+.sprite-item .sprite-icon-1{
+  background-position: center 5px;/* for the to values (x,y) */
+}
+.sprite-item .sprite-icon-1:hover{
+  background-position: center -87px;
+}
+
+.sprite-item .sprite-icon-2{
+  background-position: center -180px;
+}
+.sprite-item .sprite-icon-2:hover{
+  background-position: center -272px;
+}
+
+.sprite-item .sprite-icon-3{
+  background-position: center -366px;
+}
+.sprite-item .sprite-icon-3:hover{
+  background-position: center -458px;
+}
+
+.sprite-item .sprite-icon-4{
+  background-position: center -553px;
+}
+.sprite-item .sprite-icon-4:hover{
+  background-position: center -644px;
+}
+
+.sprite-item .sprite-icon-5{
+  background-position: center -740px;
+}
+.sprite-item .sprite-icon-5:hover{
+  background-position: center -827px;
+}

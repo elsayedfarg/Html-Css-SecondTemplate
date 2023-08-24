@@ -1,0 +1,63 @@
+/* index
+1.general styles
+2.sections styles
+  2.0 header section
+     2.0.0 furniture dropDown menu
+     2.0.2 plastic chair dropDown menu
+  2.1 slider section
+  2.2 category section
+  2.3 discount section
+*/
+
+/* general styles */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;/*it prevent padding and border from effecting the width of the element*/
+}
+body{
+  font-family: "PT Sans","sans-serif";
+}
+.unordered-list{
+  list-style: none;
+}
+li{
+  text-transform: capitalize;
+}
+a{
+  text-decoration:none;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+:root{
+  --mainColor: #7b5244;
+  --subColor: #333;
+}
+.section-padding{
+  padding: 40px 0;
+}
+.section-header{
+  font-size: 30px;
+  text-align: center;
+  cursor: context-menu;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.line{
+  display: block;/*span is an inline element so you must convert it to block element*/
+  width: 100px;
+  height: 3px;
+  background: var(--mainColor);
+  margin: auto;
+  transition: 0.5s;
+}
+.section-header:hover .line{
+  width: 150px;
+}
+hr{
+  background: var(--mainColor);
+  opacity: 0.4;
+}

@@ -1,0 +1,87 @@
+/* header */
+
+header{
+  padding: 20px 0;
+}
+header .header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-content img{
+  flex-grow: 1;
+  max-width: 170px;
+}
+header .header-content nav{
+  flex-grow: 3;
+  text-align: center;
+}
+header .header-content .login{
+  flex-grow: 1;
+  text-align: right;
+}
+.header-content ul li{
+  display: inline-block;
+}
+.header-content ul li,.header-content ul li a{
+  color: var(--subColor);
+}
+.header-content nav ul li .link-item{
+  padding: 10px 24px;
+  display: block;
+  font-weight: bold;
+  position: relative;
+}
+.header-content nav ul li .link-item::before{
+  content: "";
+  position: absolute;
+  border-left: 3px solid var(--mainColor);
+  border-right: 3px solid var(--mainColor);
+  width: 97%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+  transform: scale3d(1,0,1);
+}
+.header-content nav ul li .link-item:hover::before{
+  transform: scale3d(1,1,1);
+}
+.header-content nav ul li .link-item::after{
+  content: "";
+  position: absolute;
+  border-top: 3px solid var(--mainColor);
+  border-bottom: 3px solid var(--mainColor);
+  width: 102%;
+  height: 91%;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+  transform-origin: left;/*the effect will start from the left */
+  transform: scale3d(0,1,1);
+}
+.header-content nav ul li .link-item:hover::after{
+  transform: scale3d(1,1,1);
+  transition-delay: 0.2s;
+}
+.header-content .login ul li{
+  padding: 0 10px;
+  position: relative;
+}
+.header-content .login ul li:last-child i::after{
+  position: absolute;
+  content: "0";
+  background: var(--mainColor);
+  color: #fff;
+  font-size: 13px;
+  padding: 4px;
+  border-radius: 50%;
+  right: 70px;
+  bottom: 0;
+  opacity: 0.9;
+}
+.header-content .login ul li:last-child:hover{
+  opacity: 0.8;
+  color: #CD5C5C;
+  cursor: context-menu;
+}

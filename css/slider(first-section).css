@@ -1,0 +1,29 @@
+/* slider */
+.slider img{
+  width: 100%;
+}
+.slider .bollets{
+  position: absolute;
+  list-style-type: none;
+  bottom: 10%;
+  left: 45%;
+}
+.slider .bollets li{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin: 10px 5px;
+  border-radius: 50%;
+  background: #fff;
+  visibility: hidden;
+}
+.slider .bollets .active{
+  background-color: #000;
+}
+.parent:hover li{
+  visibility: visible;
+}
+.is-not-active:hover{
+  opacity: 0.5;
+  cursor: context-menu;
+}

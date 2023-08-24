@@ -1,0 +1,46 @@
+/* footer-section */
+footer{
+    background-color: #000;
+    height: 400px;
+}
+.last-section{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    color: #fff;
+    text-transform: capitalize;
+}
+footer .first p{
+    line-height: 30px;
+    opacity: 0.4;
+}
+footer .first img{
+    background-color: #fff;
+    border-radius: 25%;
+    margin-bottom: 20px;
+}
+.second,.third{
+    position: relative;
+}
+.second h4,.third h4{
+    padding: 22px;
+}
+.second .inner-data,.third .inner-data{
+    position: absolute;
+    top: 20%;
+    left: 9%;
+    opacity: 0.4;
+}
+.second .inner-data p,.third .inner-data p{
+    padding: 5px 0;
+}
+.fourth{
+    padding: 22px;
+}
+.fourth ul{
+    padding-top: 30px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.4;
+}

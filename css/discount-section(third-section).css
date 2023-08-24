@@ -1,0 +1,57 @@
+/* discount section */
+.discount{
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1fr;
+}
+.discount .discount-desc{
+  background: #f7f3ef;
+  padding: 20px;
+  position: relative;
+}
+.discount .discount-desc .top{
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+.discount .discount-desc .top .icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 50px;
+  color: var(--mainColor);
+}
+.discount .discount-desc p{
+  line-height: 1.7;
+}
+.discount .discount-desc .lines{
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.discount .discount-desc .lines span{
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background: var(--mainColor);
+  margin-left: 10px;
+}
+.discount .discount-item{
+  height: 350px;
+}
+.discount-item{
+  background-size: cover
+}
+.discount-item .discount-item-info h3{
+  color: var(--mainColor);
+  font-weight: normal;
+}
+.discount-item:nth-child(2){
+  background-image: url(../images/cms-banner-1.jpg);
+  margin: 0 20px;
+  padding: 20px;
+}
+.discount-item:nth-child(3){
+  background-image: url(../images/cms-banner-2.jpg);
+  padding: 20px;
+}
